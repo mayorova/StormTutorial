@@ -15,12 +15,9 @@ import backtype.storm.tuple.Values;
 import backtype.storm.utils.Utils;
 import java.util.Map;
 
-import tutorial.bolts.LoadParserBolt;
-import tutorial.spouts.UptimeSpout;
 
-import crawler.schemes.SimpleURLScheme;
 // Crawler pieces
-import crawler.spouts.*;
+import crawler.schemes.SimpleURLScheme;
 import crawler.bolts.*;
 
 import com.rabbitmq.client.AMQP;
