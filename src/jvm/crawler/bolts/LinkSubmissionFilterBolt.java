@@ -6,8 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import crawler.spouts.MemoryURLSpout;
-
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
