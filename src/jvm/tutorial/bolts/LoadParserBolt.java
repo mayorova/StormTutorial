@@ -24,9 +24,9 @@ public class LoadParserBolt extends BaseRichBolt {
 		if (input.getString(0).length() > 0)
 		{
 			String loadAveragesPart = input.getString(0)
-					.split("load averages: ")[1].toString();
+					.split("load average: ")[1].toString();
 			
-			String[] loadAverages = loadAveragesPart.split(" ");
+			String[] loadAverages = loadAveragesPart.split(", ");
 			
 			_collector.emit(input, new Values(
 					loadAverages[0], loadAverages[1], loadAverages[2])
